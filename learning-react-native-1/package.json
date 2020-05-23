@@ -1,0 +1,26 @@
+{
+  "name": "Albums",
+  "version": "0.1.0",
+  "private": false,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^22.0.6",
+    "react-test-renderer": "^16.0.0"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test:watch": "node node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node node_modules/jest/bin/jest.js --coverage",
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "react": "16.0.0",
+    "react-native": "^0.54.0"
+  },
+  "repository": "git@github.com:tjmaynes/udemy-rn-course-part-1.git",
+  "author": "tjmaynes <tjmaynes@gmail.com>",
+  "license": "MIT"
+}

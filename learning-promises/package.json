@@ -1,0 +1,22 @@
+{
+  "name": "simple-cli-executor",
+  "version": "0.1.0",
+  "description": "simple tool for automating command-line executions. made just for fun, not really meant to be used in production.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive --require test/helpers/global.js",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "cross-env ./node_modules/.bin/nyc npm run test -- --exit",
+    "test:report": "./node_modules/.bin/nyc report"
+  },
+  "author": "TJ Maynes <tjmaynes@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "mocha": "^6.0.1",
+    "nyc": "^13.3.0",
+    "sinon": "^7.2.4",
+    "sinon-chai": "^3.3.0"
+  }
+}
